@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agriculture Monitoring</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" class="css">
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMTz0yB5cW8p6c3zF5F5h4e5b9M0gW3y5L4j4" crossorigin="anonymous">
+  </head>
+  <body class="text-center">
+    <!-- Header Section -->
+    <header class="bg-primary text-white text-center py-4">
+      <h1 class="mb-0 green">Agriculture Monitoring</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark flex">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="#">About</a>
+        <a class="navbar-brand" href="#">Contact</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#weather"><i class="fas fa-sun"></i> Weather Forecast</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#soil"><i class="fas fa-leaf"></i> Soil & Crop Health</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pest"><i class="fas fa-bug"></i> Pest & Disease Alerts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#water"><i class="fas fa-tint"></i> Water Management</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="marketDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-shopping-cart"></i> Market Prices
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="marketDropdown">
+                <li><a class="dropdown-item" href="#wheat">Wheat</a></li>
+                <li><a class="dropdown-item" href="#corn">Corn</a></li>
+                <li><a class="dropdown-item" href="#rice">Rice</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tips"><i class="fas fa-seedling"></i> Agricultural Tips</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container my-5 col-md">
+      <!-- Weather Section -->
+      <section id="weather" class="mb-5">
+        <h2 class="mb-4">Weather Forecast and Monitoring</h2>
+        <div class="card mb-3">
+          <img
+            class="card-img-top"
+            src="https://storage.googleapis.com/a1aa/image/t2W5ra5YmFqZF9PzkPRzqeJWndhfNhP9LBrz6VZFVKftlMhnA.jpg"
+            alt="Weather forecast"
+          />
+          <div class="card-body">
+            <p>Current Weather: <span id="current-weather">Loading...</span></p>
+            <p>Temperature: <span id="temperature">Loading...</span></p>
+            <p>Humidity: <span id="humidity">Loading...</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Soil and Crop Health Section -->
+      <section id="soil" class=" mb-5">
+        <h2 class="mb-4">Soil & Crop Health Monitoring</h2>
+        <div class="card mb-3">
+          <img
+            class="card-img-top"
+            src="https://storage.googleapis.com/a1aa/image/soil_health.jpg"
+            alt="Soil health"
+          />
+          <div class="card-body">
+            <p>Soil pH Level: <span id="soil-ph">Loading...</span></p>
+            <p>Nutrient Levels: <span id="nutrient-levels">Loading...</span></p>
+            <p>Crop Health Status: <span id="crop-health">Loading...</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pest and Disease Alerts Section -->
+      <section id="pest" class="mb-5">
+        <h2 class="mb-4">Pest & Disease Alerts</h2>
+        <div class="card mb-3">
+          <img
+            class="card-img-top"
+            src="https://storage.googleapis.com/a1aa/image/pest_alerts.jpg"
+            alt="Pest alerts"
+          />
+          <div class="card-body">
+            <p>Latest Alerts: <span id="latest-alerts">Loading...</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Water Management Section -->
+      <section id="water" class="mb-5">
+        <h2 class="mb-4">Water Management</h2>
+        <div class="card mb-3">
+          <img
+            class="card-img-top"
+            src="https://storage.googleapis.com/a1aa/image/water_management.jpg"
+            alt="Water management"
+          />
+          <div class="card-body">
+            <p>Current Water Levels: <span id="water-levels">Loading...</span></p>
+            <p>Irrigation Schedule: <span id="irrigation-schedule">Loading...</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Agricultural Tips Section -->
+      <section id="tips" class="mb-5">
+        <h2 class="mb-4">Agricultural Tips</h2>
+        <div class="card mb-3">
+          <img
+            class="card-img-top"
+            src="https://storage.googleapis.com/a1aa/image/agricultural_tips.jpg"
+            alt="Agricultural tips"
+          />
+          <div class="card-body">
+            <p>Tip of the Day: <span id="tip-of-the-day">Loading...</span></p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2023 Agriculture Monitoring. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
