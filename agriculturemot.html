@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crop Health App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="back-Picture">
+      
+    </div>
+    <header class="bg-light p-3">
+      
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="icons ">
+          <img src="image/banana.jpg" alt="Banana Icon" class="icon" />
+          <img src="image/rice.jpg" alt="Rice Icon" class="icon" />
+          <img src="image/wheat.jpg" alt="Wheat Icon" class="icon" />
+          <img src="image/maize.jpg" alt="Maize Icon" class="icon" />
+          <img src="image/carrot.jpg" alt="Carrot Icon" class="icon" />
+        </div>
+        <div class="weather text-center">
+          <div class="date">
+            <p id="current-date"></p>
+          </div>
+          <div class="temp">
+            <p id="current-temp"></p>
+          </div>
+          <div class="details">
+            <p id="weather-details"></p>
+          </div>
+          <div class="icon">
+            <span id="weather-icon"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container my-4">
+      <section class="heal-crop text-left">
+        <h2>Heal your crop</h2>
+        <div class="row crop-steps">
+          <div class="col-md-4 step text-center">
+            <img src="image/OIP.jpg" alt="Camera for Crop Diagnosis" class="icon" />
+            <p>Take a picture</p>
+          </div>
+          <div class="col-md-4 step text-center">
+            <img src="image/dig.png" alt="Diagnosis Icon" class="icon" />
+            <p>See diagnosis</p>
+          </div>
+          <div class="col-md-4 step text-center">
+            <img src="image/med.png" alt="Medicine Icon" class="icon" />
+            <p>Get medicine</p>
+          </div>
+        </div>
+        <a href="#" class="btn btn-success take-picture mt-3">
+          Take a picture
+        </a>
+      </section>
+      <section class="features row my-4">
+        <div class="col-md-4 feature text-center">
+          <a href="Fertilizer Calculator/fertilizercal.html" class="btn feature-button">
+            <img src="image/fertilizer.png" alt="Fertilizer" class="icon" />
+            <p>Fertilizer calculator ></p>
+          </a>
+        </div>
+
+        <div class="col-md-4 feature text-center">
+          <a
+            href="Cultivation Tips/CultivationTips.html"
+            class="btn feature-button"
+          >
+            <img
+              src="image/cultivation.png"
+              alt="Cultivation Tips"
+              class="icon"
+            />
+            <p>Cultivation Tips <span>></span></p>
+          </a>
+        </div>
+
+        <div class="col-md-4 feature text-center">
+          <a
+            href="Estimate profit/Fertilizercalc.html"
+            class="btn feature-button"
+          >
+            <img src="image/pest.png" alt="Pest Control" class="icon" />
+            <p>Estimate Yield profit</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-light text-center p-3">
+      <p>&copy; 2023 Crop Health App</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

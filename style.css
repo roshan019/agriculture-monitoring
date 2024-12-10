@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.take-picture{
+    width: 100%;
+    border-radius: 80px;
+    border: none;
+    background-color:  rgb(64, 64, 195);
+    height: 30px;
+}
+
+header {
+    background-color: #e0f7fa;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    gap: 10px;
+    margin: 10px;
+    flex-direction: horizontal;
+    justify-content: left;
+}
+
+.weather {
+    text-align: center;
+    justify-content: center;
+    border-radius: 50px;
+    display: flex;
+    background-color: beige;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.temp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temp img {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.heal-crop {
+    background-color: #ffffff;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.crop-steps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step {
+    text-align: center;
+}
+
+.step img {
+    width: 50px;
+    height: 50px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature {
+    background-color: #f1f8e9;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    margin: 0 5px;
+    justify-content: center;
+    display: flex;
+}
+
+.feature img {
+    width: 40px;
+    height: 40px;
+}
+
+.feature-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #e0f7fa;
+}
+
+.back-Picture {
+    background-image: url('image/agrpic.webp');
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Set the height to the full viewport height */
+  }
